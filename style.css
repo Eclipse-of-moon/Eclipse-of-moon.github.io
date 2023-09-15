@@ -1,0 +1,99 @@
+body {
+    margin: 0; /* убираем внешний отступ (по бокам) */
+    font-family: 'Tektur', cursive; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    padding: 0; /* убираем отступ слева от списка */
+    margin: 0; /* убираем область отпуста сверху, которая образуется из-за списка */
+    list-style: none; /* убираем точки */
+}
+
+.header li { /* добавили header, чтобы ol в body выравнивался не в одну линию, как меню*/
+    display: inline; /* выравниванием меню с одну строку */
+    margin-right: 60px; /* отступы между пунктами меню */
+}
+
+li:last-child { /* псевдокласс, last child применяется к ul, т.к. li вложен в ul*/
+    margin-right: 0;
+}
+
+.header { /* обращение не к header, а к классу header */
+    font-family: 'Tektur', cursive; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 20px 0; /* составное свойство, чтобы не прописывать для 4 сторон отдельно */
+    letter-spacing: 2px; /* добавление пробелов между буквами */
+    text-transform: uppercase; /* преобразование текста в верхний регистр */
+    border-bottom: 5px solid #000000; /* добавление нижней границы */
+    box-shadow: 0px 0px 10px #750000(0, 0, 0, 0.5); /* добавление тени */
+    /* font-size: 1em;  размер шрифта относительно родителя, 20 px - обычно стандартно,
+    1em - как у родителя, если у всех будет 0.5em, то это бесконечное уменьшение у наследников*/
+    font-size: 1.25rem;
+    background-image: url(images/back.png);
+}
+
+/* контекстный селектор: */
+.main-menu a { /* применяем только к тегам а внутри меню, вложенность не имеет значения*/
+    text-decoration: none; /* убираем подчеркивания */
+    color: rgb(0, 0, 0); /* цвет ссылок */
+    font-weigh  t: bold; /* жирность начертания ссылок*/
+}
+
+.container {
+    max-width: 75%; /* ограничиваем область nav*/
+    margin: 0 auto; /* отступ сверху и снизу нам не нужен, слева и справа хотим 25% распределить автоматом*/
+}
+
+.footer {
+    background-color: #000000;
+    color: #fbfbfb;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.avatar {
+    height: 300px;
+    text-align: center;
+    background-image: url(https://i.ytimg.com/vi/Vlh4UdvIilY/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar img {
+    height: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #2c2b2a ;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #b0b0b0;
+    border: 5px;
+    padding: 10px;
+    border-color: #0f8a34;
+    border-radius: 3px solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    color: #000000;
+}
+
+.w-50 {
+    width: 50%;
+}   
+
+.mx-auto {
+    margin-right: auto;
+}

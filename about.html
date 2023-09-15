@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--при разметке полей учитывать, что есть еще внешние (margin) и внутренние отступы-->
+<body>
+    <header class="header">
+        <!--div - универсальный кирпичик, в нем может быть все, что угодно-->
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">На главную</a></li> <!--якорные ссылки-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!--все, что тут в стилях (main style = " "), имеет наивысший приоритет-->
+
+        <div class="container">
+
+            <section id = "about"> <!--добавляем идентификатор, чтобы в меню добавить ссылочки-->
+                <h3>Обо мне</h3>
+                <figure class = "avatar">
+                    <img src="images/person.png" alt="Person">
+                </figure>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+        <div>
+            <pre> &copy; tg: @popka_nabebina </pre>
+            <pre>&nbsp;&nbsp; email: demer.chanel@gmail.com</pre>
+        </div>
+    </footer>
+
+</body>
+
+</html>

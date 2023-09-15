@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Tektur&display=swap" rel="stylesheet">
+    <title>Веб-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--при разметке полей учитывать, что есть еще внешние (margin) и внутренние отступы-->
+<body>
+    <header class="header">
+        <!--div - универсальный кирпичик, в нем может быть все, что угодно-->
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#about">Обо мне</a></li> <!--якорные ссылки-->
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#tech">Технологии</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h1 class = "p-center">No way, just some turtles</h1>
+                <p class="w-50 mx-auto"></p>
+                <a class="btn" href="email@example.com">Дополнительно</a>
+            </div>
+        </div>
+    </header>
+
+    <main> <!--все, что тут в стилях (main style = " "), имеет наивысший приоритет-->
+
+        <div class="container">
+
+            <section id = "about"> <!--добавляем идентификатор, чтобы в меню добавить ссылочки-->
+                <h3>Обо мне</h3>
+                <figure class = "avatar">
+                    <img src="images/person.png" alt="Person">
+                </figure>
+                <p>Вы находитесь впервые написанным мной сайте, можете оглядеть все что тут есть</p>
+                p.s. тут немного всего, но вы все равно посмотрите
+                <p><a class="btn" href = "about.html">Дополнительно</a></p>
+            </section>
+
+            <section id = "skills">
+                <h3>Навыки</h3>
+                <p>Верстка сайтов - это процесс создания макета веб-страницы, который определяет ее внешний вид и функциональность. Верстальщик сайтов - это специалист, который занимается созданием HTML- и CSS-кода на основе дизайн-макета сайта.
+                    Начинающий верстальщик должен обладать следующими навыками:
+                    1. Знание основ HTML и CSS - это базовые навыки для создания структуры и стилизации веб-страниц;
+                    2. Понимание принципов работы CSS-селекторов, свойств и значений;
+                    3. Умение работать с препроцессорами CSS, такими как Sass или Less;
+                    4. Знание основ кроссбраузерной верстки и умение адаптировать код под разные браузеры;
+                    5. Умение работать со сторонними библиотеками и фреймворками, такими как Bootstrap или Foundation;</p>
+                    <a class="btn" href = "skills.html">Дополнительно</a>
+            </section>
+            
+            <section id = "tech">
+                <h3>Технологии</h3>
+                <p>Технологии HTML, CSS и JavaScript являются основными инструментами для создания веб-страниц и приложений.
+                    Они работают вместе, чтобы обеспечить функциональность и внешний вид интернет-сайтов.
+                    HyperText Markup Language (HTML) - это язык разметки, который определяет структуру веб-страницы.
+                    Он состоит из различных тегов, которые определяют такие элементы, как заголовки, параграфы, списки и ссылки.</p>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <!--чтобы сгенерить список быстро пишем ol>li*3 и нажимаем enter-->
+                <!-- это div с 3 секциями внутри: div>section*3 -->
+                <a class="btn" href = "tech.html">Дополнительно</a>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+        <div>
+            <pre> &copy; tg: @popka_nabebina </pre>
+            <pre>&nbsp;&nbsp; email: demer.chanel@gmail.com</pre>
+        </div>
+    </footer>
+
+</body>
+
+</html>

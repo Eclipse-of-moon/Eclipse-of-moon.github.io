@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Веб-разработчик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--при разметке полей учитывать, что есть еще внешние (margin) и внутренние отступы-->
+<body>
+    <header class="header">
+        <!--div - универсальный кирпичик, в нем может быть все, что угодно-->
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">На главную</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!--все, что тут в стилях (main style = " "), имеет наивысший приоритет-->
+
+        <div class="container">
+            
+            <section id = "tech">
+                <h3>Технологии</h3>
+                <p>Немного информации о моих познаниях ЯП</p>
+                <ol>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                </ol>
+                <!--чтобы сгенерить список быстро пишем ol>li*3 и нажимаем enter-->
+                <!-- это div с 3 секциями внутри: div>section*3 -->
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Название технологии</th>
+                            <th>Уровень владения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Да</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Это который для майнкрафта?</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>это че?</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class = "footer">
+        <div>
+            <pre> &copy; tg: @popka_nabebina </pre>
+            <pre>&nbsp;&nbsp; email: demer.chanel@gmail.com</pre>
+        </div>
+    </footer>
+
+</body>
+
+</html>
